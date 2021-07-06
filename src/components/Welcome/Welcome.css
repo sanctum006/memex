@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+.welcome-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.welcome-container > h1 {
+  font-size: 3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+.welcome-container > h2 {
+  font-size: 3rem;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 5px auto 10px;
+  color: #bbb;
+}
+
+.welcome-buttons > button {
+  margin: 10px;
+}
+
+.create-meme-btn {
+  color: white;
+  background-color: transparent;
+  padding: 7px 15px;
+  font-size: 1.1rem;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 5px;
+  border: 2px solid #228dff;
+  color: #228dff;
+  transition: all 100ms ease-in-out;
+}
+
+.create-meme-btn:hover {
+  padding: 5px 13px;
+  border: 4px solid #228dff;
+}
+
+.stream-meme-btn {
+  color: #b3ff51;
+  background-color: transparent;
+  padding: 7px 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  border: 2px solid #b3ff51;
+  border-radius: 5px;
+}
+
+.stream-meme-btn:hover {
+  padding: 5px 13px;
+  border: 4px solid #b3ff51;
+}
+
+@media only screen and (max-width: 500px) {
+  .welcome-container > h1 {
+    font-size: 2.3rem;
+  }
+
+  .welcome-container > h2 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .welcome-container > h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-container > h2 {
+    font-size: 1rem;
+  }
+
+  .stream-meme-btn,
+  .create-meme-btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin: 0px;
+  }
+}

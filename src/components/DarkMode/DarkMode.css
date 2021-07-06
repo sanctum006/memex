@@ -1,0 +1,17 @@
+.dark-mode {
+  position: absolute;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  bottom: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.sun-icon {
+  color: #f28c38;
+}

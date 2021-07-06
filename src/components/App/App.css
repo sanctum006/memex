@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
