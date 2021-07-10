@@ -17,3 +17,7 @@
   margin: auto 10px;
   font-size: 1.5rem;
 }
+
+.bg-footer-custom {
+  background-color: #ddd;
+}

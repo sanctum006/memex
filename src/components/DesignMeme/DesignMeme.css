@@ -1,0 +1,27 @@
+.design-meme-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.design-meme-container-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme-img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.design-meme-container-right {
+  width: 50%;
+}
+
+form {
+  color: white;
+}

@@ -1,0 +1,15 @@
+.meme-template-card {
+  transition: all 100ms ease-in;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.meme-template-card:hover {
+  transform: scale(1.05);
+}
+
+.meme-template-card-img {
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 10px;
+}

@@ -1,17 +1,32 @@
 .dark-mode {
-  position: absolute;
+  position: fixed;
   right: 20px;
-  height: 40px;
-  width: 40px;
-  bottom: 20px;
+  height: 50px;
+  width: 50px;
+  bottom: 10px;
   border-radius: 100%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: white;
+  transition: all 100ms ease-in;
 }
 
-.sun-icon {
-  color: #f28c38;
+.dark-mode:active {
+  transform: scale(1.1);
+}
+
+.bulb-on-icon {
+  font-size: 2rem;
+}
+
+.bulb-off-icon {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .dark-mode {
+    bottom: 80px;
+  }
 }

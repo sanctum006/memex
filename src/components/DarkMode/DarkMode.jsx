@@ -1,10 +1,10 @@
 import React from 'react';
-import './DarkMode.css'
+import './DarkMode.css';
 
-function DarkMode() {
+function DarkMode({ mode, handleModeChange }) {
     return (
-        <div className="dark-mode">
-            {false ? <i class="far fa-sun" style={{color: "#f9d71c"}}></i> : <i class="fas fa-moon" style={{color: "black"}}></i>}
+        <div onClick={handleModeChange}>
+            {mode ? <div className="dark-mode" style={{backgroundColor: "yellow"}}><i className="far fa-lightbulb bulb-on-icon"></i></div> : <div className="dark-mode" style={{backgroundColor: "white"}}><i className="fas fa-lightbulb bulb-off-icon"></i></div>}
         </div>
     );
 }

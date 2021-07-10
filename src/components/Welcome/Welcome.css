@@ -15,16 +15,11 @@
   font-weight: 600;
 }
 
-.welcome-container > h2 {
+.welcome-heading-2 {
   font-size: 3rem;
   font-size: 1.3rem;
   text-align: center;
   margin: 5px auto 10px;
-  color: #bbb;
-}
-
-.welcome-buttons > button {
-  margin: 10px;
 }
 
 .create-meme-btn {
@@ -34,9 +29,10 @@
   font-size: 1.1rem;
   font-family: "Ubuntu", sans-serif;
   border-radius: 5px;
-  border: 2px solid #228dff;
-  color: #228dff;
+  border: 3px solid #228dff;
   transition: all 100ms ease-in-out;
+  font-weight: 700;
+  margin: 10px;
 }
 
 .create-meme-btn:hover {
@@ -50,8 +46,11 @@
   padding: 7px 15px;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.1rem;
-  border: 2px solid #b3ff51;
+  border: 3px solid #b3ff51;
+  transition: all 100ms ease-in-out;
+  font-weight: 700;
   border-radius: 5px;
+  margin: 10px;
 }
 
 .stream-meme-btn:hover {
