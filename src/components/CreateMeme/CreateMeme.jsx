@@ -8,7 +8,7 @@ function CreateMeme({ imgData, mode }) {
   const [memeImg, setMemeImg] = useState(null);
   return (
     <div className="create-meme-container bg-dark">
-      {memeImg === null ? <MemeTemplate imgData={imgData} /> : null}
+      {memeImg === null ? <MemeTemplate imgData={imgData} mode={mode} /> : null}
     </div>
   );
 }

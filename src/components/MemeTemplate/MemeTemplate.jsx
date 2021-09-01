@@ -4,8 +4,8 @@ import MemeTemplateCard from "../MemeTemplateCard/MemeTemplateCard";
 import { useState } from "react";
 
 function MemeTemplate({ imgData, mode }) {
-  const memeTemplates = imgData.map((imgEle) => (
-    <MemeTemplateCard imgSrc={imgEle.url} />
+  const memeTemplates = imgData.map((imgEle, index) => (
+    <MemeTemplateCard key={index} imgSrc={imgEle.url} id={imgEle.id} />
   ));
 
   const memeTemplates1 = memeTemplates.splice(0, 5);
@@ -39,14 +39,15 @@ function MemeTemplate({ imgData, mode }) {
           name=""
           id=""
         />
-        Choose or{" "}
+        Choose
+        {/* or{" "}
         <button
           onClick={() =>
             document.querySelector(".meme-template-img-upload").click()
           }
         >
           Upload
-        </button>{" "}
+        </button>{" "} */}{" "}
         a template to get started
       </h2>
       <div className="meme-template-card-container">

@@ -7,6 +7,8 @@ import DarkMode from "../DarkMode/DarkMode";
 import CreateMeme from "../CreateMeme/CreateMeme";
 import Welcome from "../Welcome/Welcome";
 import DesignMeme from "./../DesignMeme/DesignMeme";
+import Meme from "../Meme/Meme";
+import Stream from "../Stream/Stream";
 
 class App extends React.Component {
   state = {
@@ -32,33 +34,33 @@ class App extends React.Component {
     };
 
     fetchData();
-
-    console.log(this.state.imgdata);
   }
 
   render() {
     return (
       <div className="app">
-        <Header />
         <BrowserRouter>
+          <Header />
           <Route path="/" exact>
             <Welcome mode={this.state.mode} />
           </Route>
-          <Route path="/create-meme">
+          <Route path="/choose-template">
             <CreateMeme mode={this.state.mode} imgData={this.state.imgdata} />
           </Route>
-          <Route path="/k">
-            <DesignMeme img={this.state.imgdata[0]} />
+          <Route path="/stream-memes">
+            <Stream />
           </Route>
+          <Route path="/create-meme/:id" component={DesignMeme} />
+          <Route path="/meme/:id/:type" component={() => <Meme />} />
           {/* <Route path="/" exact>
           <Welcome mode={mode} setMode={setMode} />
         </Route> */}
         </BrowserRouter>
         <Footer mode={this.state.mode} />
-        <DarkMode
+        {/* <DarkMode
           mode={this.state.mode}
           handleModeChange={this.handleModeChange}
-        />
+        /> */}
       </div>
     );
   }

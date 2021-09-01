@@ -8,11 +8,14 @@ function Welcome({ mode, setMode }) {
       className={`welcome-container ${mode ? "bg-footer-custom" : "bg-dark"}`}
     >
       <h1 style={{ color: `${mode ? "#000" : "#fff"}` }}>Welcome to MemeX</h1>
-      <h2 style={{ color: `${mode ? "#555" : "#bbb"}` }} className="welcome-heading-2">
+      <h2
+        style={{ color: `${mode ? "#555" : "#bbb"}` }}
+        className="welcome-heading-2"
+      >
         A platform to create and stream memes.
       </h2>
       <div className="welcome-buttons">
-        <Link to="/create-meme" className>
+        <Link to="/choose-template" className>
           <button
             type="button"
             className="create-meme-btn"

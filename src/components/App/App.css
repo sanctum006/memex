@@ -4,6 +4,7 @@
   border: none;
   outline: none;
   user-select: none;
+  /* overflow: hidden; */
 }
 
 body {
@@ -16,6 +17,10 @@ body {
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 500px;
+  /* overflow: hidden; */
+  background-color: #262626;
+  overflow-x: hidden;
 }
 
 button {

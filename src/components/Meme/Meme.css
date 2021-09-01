@@ -1,0 +1,74 @@
+.meme__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #212529;
+  padding-top: 30px;
+}
+
+#meme {
+  max-height: 60vh;
+  max-width: 80vw;
+}
+
+.download-meme {
+  color: white;
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  align-self: center;
+  margin: 20px;
+}
+
+.download-meme:hover {
+  background-color: white;
+  color: #000;
+}
+
+.share-meme {
+  color: #b3ff51;
+  border: 2px solid #b3ff51;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  align-self: center;
+  margin: 20px;
+}
+
+.share-meme:hover {
+  background-color: #b3ff51;
+  color: #000;
+}
+
+.meme__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #aaa;
+  background-color: #212529;
+  border-radius: 5px;
+}
+
+.meme__form > * {
+  margin: 5px;
+}
+
+.meme__form > input {
+  padding: 5px;
+  border: 1px solid #000;
+  color: #000;
+  font-family: "Ubuntu", serif;
+  font-weight: 500;
+}
+
+.postButton {
+  color: black;
+  background-color: #fff;
+  font-weight: 600;
+  padding: 3px 10px;
+}
