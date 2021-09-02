@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Meme.css";
 import DomToImage from "dom-to-image";
 import Modal from "@material-ui/core/Modal";
 import { useState } from "react";
 import { useParams } from "react-router";
-import MemeData from "../../MemeData";
+import { useDataLayerValue } from "../../DataLayer";
 
 function Meme() {
+  const [{ memes }, dispatch] = useDataLayerValue();
+
   const { id, type } = useParams();
 
   const url = `https://i.imgflip.com/${id}.${type}`;
 
   const [open, setOpen] = React.useState(false);
 
-  const [memes, setMemes] = MemeData();
+  const [state, setState] = useState(true);
 
   const [form, setForm] = useState({
     name: "",
@@ -21,6 +23,10 @@ function Meme() {
     caption: "",
     img: url,
   });
+
+  useEffect(() => {
+    console.log(memes);
+  }, [state]);
 
   const handleOpen = () => {
     setOpen(true);
@@ -32,7 +38,18 @@ function Meme() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMemes([...memes, { ...form }]);
+
+    dispatch({
+      type: "ADD_MEME",
+      meme: {
+        name: form.name,
+        avatar: form.avatar,
+        caption: form.caption,
+        img: form.img,
+      },
+    });
+
+    setState(!state);
   };
 
   function downloadtable() {

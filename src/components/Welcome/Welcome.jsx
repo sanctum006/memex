@@ -27,7 +27,7 @@ function Welcome({ mode, setMode }) {
             Create Meme
           </button>
         </Link>
-        <Link to="/stream-meme">
+        <Link to="/stream-memes">
           <button
             type="button"
             className="stream-meme-btn"

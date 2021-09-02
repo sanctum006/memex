@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import MemePost from "../MemePost/MemePost";
-import MemeData from "../../MemeData";
+import { useDataLayerValue } from "../../DataLayer";
 import "./Stream.css";
 
 function Stream() {
-  const [memes] = MemeData();
-  useEffect(() => {
-    console.log(memes);
-  });
+  const [{ memes }, dispatch] = useDataLayerValue();
+
   return (
     <div className="stream__container">
       <div className="stream__posts">
