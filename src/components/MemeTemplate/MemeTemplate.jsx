@@ -48,7 +48,7 @@ function MemeTemplate({ imgData, mode }) {
         >
           Upload
         </button>{" "} */}{" "}
-        a template to get started
+        a template
       </h2>
       <div className="meme-template-card-container">
         <div className="row">
